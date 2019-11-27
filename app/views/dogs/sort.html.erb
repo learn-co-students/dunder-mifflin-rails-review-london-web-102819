@@ -1,0 +1,7 @@
+<h2>Dogs sorted by no. of employees:</h2>
+
+<% @dogs.each do |d|%>
+    <p><%= link_to(d.name, dog_path(d))%>  <%=d.employees.count %></p>
+<% end %>
+
+<%= link_to("Main page", dogs_path)%>
