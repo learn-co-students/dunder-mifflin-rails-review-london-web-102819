@@ -1,0 +1,10 @@
+<h1><%=@employee.full_name%></h1>
+<ul>
+<h2><li>alias:<%=@employee.alias%><br></li></h2>
+<h2><li>title:<%=@employee.title%><br></li></h2>
+<h2><li>office:<%=@employee.office%><br></li> </h2>
+<h2><li> I love <%=@employee.dog.name %></li></h2>
+</ul>
+<%= image_tag (@employee.img_url)%>
+
+
