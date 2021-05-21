@@ -1,0 +1,9 @@
+<%= form_for @employee do |n|%>
+<h3> First Name <%= n.text_field :first_name %></h3>
+<h3> Last Name <%= n.text_field :last_name %></h3>
+<h3> Alias <%= n.text_field :alias %></h3>
+<h3> Title <%= n.text_field :title %></h3>
+<h3> Office <%= n.text_field :office %></h3>
+<h3><%= n.collection_select :dog_id, Dog.all, :id, :name %></h3>
+<%= n.submit %>
+<% end %>

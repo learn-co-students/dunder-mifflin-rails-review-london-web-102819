@@ -1,0 +1,5 @@
+<h1>Which Dunder Mifflin Empoyee?</h1>
+
+<h2><% @employees.each do |e| %>
+<h2><%= link_to e.first_name, e %></h2>
+<% end %>
